@@ -1,0 +1,69 @@
+<div class="animate__animated animate__fadeIn animate__faster">
+    <h2>Capital</h2>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <app-pais-input
+                (onEnter)="buscar( $event )"
+                placeholder="Buscar capital..."
+                (onDebounce)="sugerencias( $event )">
+            </app-pais-input>
+        </div>
+    </div>
+    <ul *ngIf="mostrarSugerencias" class="list-group">
+        <li *ngFor="let pais of capitalesSugeridos" class="list-group-item list-group-item-action">
+            <a class="nav-link" 
+                [routerLink]="['/pais', pais.cioc]">
+                {{ pais.capital }}
+            </a>
+           
+        </li>
+        <li *ngIf="termino.trim()" class="list-group-item list-group-item-action">
+
+            <a class="nav-link"
+                (click)="buscar( termino )">
+                Buscar: "{{ termino }}" 
+            </a>
+        
+        </li>
+    </ul>
+
+    <hr>
+
+    <div *ngIf="hayError" class="alert alert-danger">
+        {{termino}}, sin resultados...
+    </div>
+
+    <div *ngIf="paises.length > 0" class="row">
+        <div *ngIf="!hayError" class="col">
+            
+            <app-pais-tabla [paises]="paises"></app-pais-tabla>
+            
+        </div>
+    </div>
+</div>
+
+
+
+<!--
+    <ul *ngIf="mostrarSugerencias" class="list-group">
+        <li *ngFor="let pais of paisesSugeridos" class="list-group-item list-group-item-action">
+            <a class="nav-link" 
+                [routerLink]="['/pais', pais.cioc]">
+                {{ pais.name.common }}
+            </a>
+           
+        </li>
+        <li  class="list-group-item list-group-item-action">
+
+            <a class="nav-link"
+                (click)="buscar( termino )">
+                Buscar: "{{ termino }}" 
+            </a>
+        
+        </li>
+    </ul>
+
+
+
+-->
