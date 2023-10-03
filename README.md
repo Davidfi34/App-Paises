@@ -10,11 +10,10 @@ This project aims to perform searches of countries, capitals and regions through
 
 
 
-
 ### Built With
 
-* [![Angular][Angular.io]][Angular-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+[![Angular][Angular.io]][Angular-url]
+[![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
