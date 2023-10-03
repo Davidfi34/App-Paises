@@ -6,6 +6,9 @@
 
 This project aims to perform searches of countries, capitals and regions through REST API endpoints.
 
+![imagen](https://github.com/Davidfi34/App-Paises/assets/46968835/bbd7d1dd-f146-4a7d-a375-11dc9974cd2a)
+
+
 
 
 ### Built With
