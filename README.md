@@ -17,6 +17,7 @@ This project aims to perform searches of countries, capitals and regions through
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 * REST API:  https://restcountries.com/
 
+Page: https://64acac8949e0a117430ea8df--dazzling-granita-f49583.netlify.app/
 
 <!-- CONTACT -->
 ## Contact
