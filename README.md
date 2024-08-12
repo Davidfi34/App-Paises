@@ -27,7 +27,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 * Linkedin: https://www.linkedin.com/in/david-figuerero-58466b174/
 
-* Project Link: https://dazzling-granita-f49583.netlify.app/
+* Project Link: https://bright-tapioca-ec4992.netlify.app
 
 
 
