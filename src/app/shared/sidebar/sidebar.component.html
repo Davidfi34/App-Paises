@@ -1,21 +1,53 @@
-<h2>Buscar</h2>
-    <hr>
-<ul class="list-group">
-        <li routerLink=""
-        routerLinkActive="active"
-        [routerLinkActiveOptions]= "{ exact: true }"
-        class="list-group-item">
-        Buscar país
-    </li>
-    <li routerLink="region"
-        routerLinkActive="active"
-        class="list-group-item">
-        Buscar region
-    </li>
-    <li routerLink="capital"
-    routerLinkActive="active"
-    class="list-group-item">
-    Buscar capital
-    </li>
+<!--<div class="container sidebar p-4" >
 
-</ul>
+    <h2 class="fw-light text-light">Buscar</h2>
+    <hr class="text-light">
+    <ul class="list-group list-group-flush">
+        <li routerLink=""
+            routerLinkActive="active"
+            [routerLinkActiveOptions]= "{ exact: true }"
+            class="list-group-item border-0 ">
+            PAÍS
+        </li>
+        <li routerLink="region"
+            routerLinkActive="active"
+            class="list-group-item border-0">
+            REGIÓN
+        </li>
+        <li routerLink="capital"
+            routerLinkActive="active"
+            class="list-group-item border-0">
+            CAPITAL
+        </li>
+
+    </ul>
+</div>-->
+
+<nav class="navbar navbar-expand-lg navbar-light text-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Buscar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse p-4" id="navbarNavAltMarkup">
+        <div class="navbar-nav m-2">
+          <a routerLink=""
+          routerLinkActive="active"
+          [routerLinkActiveOptions]= "{ exact: true }"
+          class="nav-link ">
+          Pais</a>
+          <a  routerLink="region"
+          routerLinkActive="active"
+          class="nav-link">
+          Region</a>
+          <a routerLink="capital"
+          routerLinkActive="active"
+          class="nav-link" >Capital</a>
+  
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+

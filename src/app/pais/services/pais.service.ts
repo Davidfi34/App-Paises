@@ -23,7 +23,8 @@ export class PaisService {
 
   buscarPais( termino : string): Observable<Country[]> {
 
-    const url = `${ this.apiUrl }/v3.1/name/${ termino }`;
+    const url = `${ this.apiUrl }v3.1/name/${ termino }`;
+
 
     return this.http.get<Country[]>(url, { params: this.httpParams });
   }
@@ -31,7 +32,7 @@ export class PaisService {
   
   buscarCapital( termino : string): Observable<Country[]> {
 
-    const url = `${ this.apiUrl }/v3.1/capital/${ termino }`;
+    const url = `${ this.apiUrl }v3.1/capital/${ termino }`;
 
     return this.http.get<Country[]>(url, { params: this.httpParams } );
   }
@@ -39,7 +40,7 @@ export class PaisService {
   
   getDescription( id : string): Observable<Country> {
 
-    const url = `${ this.apiUrl }/v3.1/alpha/${ id }`;
+    const url = `${ this.apiUrl }v3.1/alpha/${ id }`;
 
     return this.http.get<Country>(url);
   }
@@ -47,10 +48,8 @@ export class PaisService {
 
 
   buscarRegion( region: string ): Observable<Country[]>{
-   
-  //OTRO URL
-   // const url = `${ this.apiUrl }/v2/regionalbloc/${ region }`;
-    const url = `${ this.apiUrl }/v3.1/region/${ region }`;
+
+    const url = `${ this.apiUrl }v3.1/region/${ region }`;
 
     return this.http.get<Country[]>(url,{ params: this.httpParams });
 
